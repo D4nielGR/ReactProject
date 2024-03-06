@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "usuario1",
+      "contrasena": "u1"
+    },
+    {
+      "id": 2,
+      "nombre": "usuario2",
+      "contrasena": "u2"
+    },
+    {
+      "id": 3,
+      "nombre": "usuario3",
+      "contrasena": "u3"
+    },
+    {
+      "id": "dc56",
+      "nombre": "Gassin",
+      "contrasena": "1234"
+    },
+    {
+      "id": "3f58",
+      "nombre": "Daniel",
+      "contrasena": "1234"
+    },
+    {
+      "id": "3800",
+      "nombre": "Paquito",
+      "contrasena": "1234"
+    },
+    {
+      "id": "65eb",
+      "nombre": "regyx",
+      "contrasena": "1234"
+    },
+    {
+      "id": "2ebc",
+      "nombre": "regyx",
+      "contrasena": "aaaaaa"
+    },
+    {
+      "id": "2d80",
+      "nombre": "mariaguerreroreina",
+      "contrasena": "aaaa"
+    }
+  ]
+}
