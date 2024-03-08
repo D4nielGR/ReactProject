@@ -5,11 +5,20 @@ const CrearNota = () => {
   const [titulo, setTitulo] = useState('');
   const [descripcion, setDescripcion] = useState('');
 
+  const obtenerFechaActual = () => {
+    const fechaActual = new Date();
+    const dia = fechaActual.getDate();
+    const mes = fechaActual.getMonth() + 1;
+    const anio = fechaActual.getFullYear();
+    return `${dia < 10 ? '0' + dia : dia}/${mes < 10 ? '0' + mes : mes}/${anio}`;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const nuevaNota = {
       titulo,
       descripcion,
+      fecha_creacion: obtenerFechaActual(), // Obtener la fecha actual en formato DD/MM/YYYY
       userid: 1 // Asigna un ID de usuario válido
     };
 

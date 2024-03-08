@@ -8,6 +8,13 @@ const Registro = () => {
     const handleRegistro = async (e) => {
         e.preventDefault();
         try {
+            // Verificar si el usuario ya existe antes de enviar la solicitud de registro
+            const existingUserResponse = await fetch(`http://localhost:3002/users?nombre=${username}`);
+            const existingUserData = await existingUserResponse.json();
+            if (existingUserData.length > 0) {
+                throw new Error('El usuario ya existe');
+            }
+
             const response = await fetch('http://localhost:3002/users', {
                 method: 'POST',
                 headers: {
@@ -25,7 +32,7 @@ const Registro = () => {
             window.location.href = '/login';
         } catch (error) {
             console.error(error);
-            setError('Error al registrar el usuario');
+            setError('El usuario ya existe');
         }
     };
 

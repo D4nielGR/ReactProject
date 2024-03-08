@@ -1,0 +1,27 @@
+/* Estilos para las notas */
+.nota-card-light {
+    background-color: #f5f5dc; /* Color de fondo */
+    border: 1px solid #8b4513; /* Borde marrón */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  .nota-card-dark {
+    background-color: rgb(187, 187, 187); /* Color de fondo */
+    border: 1px solid rgb(119, 114, 114); /* Borde marrón */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+
+  .nota-title {
+    color: #8b4513; /* Color del título */
+    font-size: 1.5rem; /* Tamaño del título */
+  }
+  
+  .nota-description {
+    color: #000; /* Color del texto */
+  }
+  
+  .nota-date {
+    color: #8b4513; /* Color de la fecha */
+  }

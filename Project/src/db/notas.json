@@ -1,0 +1,44 @@
+{
+  "notas": [
+    {
+      "id": "cb03",
+      "titulo": "Nota 2",
+      "descripcion": "Esta es mi segunda letra ",
+      "fecha_creacion": "08/03/2004",
+      "userid": 1
+    },
+    {
+      "titulo": "Dan",
+      "descripcion": "Hola, mi nombre es dAn",
+      "fecha_creacion": "08/03/2003",
+      "id": "ad44"
+    },
+    {
+      "titulo": "Pepelu",
+      "descripcion": "Elden rin",
+      "fecha_creacion": "08/03/2010",
+      "id": "3da7"
+    },
+    {
+      "id": "d913",
+      "titulo": "Nota Saludo",
+      "descripcion": "Hola, mundo",
+      "fecha_creacion": "08/03/2022",
+      "userid": 1
+    },
+    {
+      "id": "a4d5",
+      "titulo": "Awalakaka",
+      "descripcion": "Potasio",
+      "fecha_creacion": "08/03/2024",
+      "userid": 1
+    },
+    {
+      "id": "2fa1",
+      "titulo": "Nota 1",
+      "descripcion": "Esta es mi primera nota",
+      "fecha_creacion": "08/03/2024",
+      "userid": 1
+    }
+  ]
+}

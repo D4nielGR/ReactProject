@@ -7,8 +7,9 @@ const AboutMe = () => {
             <div className="card-body">
               <h1 className="card-title">About Me</h1>
               <p className="card-text">
-                ¡Hola! Soy Daniel, y esta es una página sobre mí. Soy desarrollador web de aplicaciones, estudio en un curso superior de 2º de DAW.
+                ¡Hola! Esto es una página en desarrollo. Soy aún Juniorr y poco a poco me voy desarrollando en este sector. Espero que te guste este proyecto, gracias por tu tiempo.
               </p>
+              <img className="card-img" src="../../public/img/fo.jpg" alt="" width={480}/>
             </div>
           </div>
         </div>

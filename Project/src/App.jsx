@@ -13,20 +13,20 @@ import Login from './components/Login';
 
 const App = () => {
 
-  // Obtener la sesión del usuario
+  // Sesión usuario
   const sessionActual = JSON.parse(sessionStorage.getItem('UsuarioActual'));
   const logueado = !!sessionStorage.getItem('UsuarioActual');
 
-  // Función para cerrar sesión
+  // Cerrar sesión
   const handleLogout = () => {
-      // Elimina la sesión
+      // Elimina sesión
       sessionStorage.removeItem("UsuarioActual"); 
-      // Redirige al usuario a la página de inicio
+      // Redirección al usuario a la página de inicio
       window.location.href = "/"; 
   };
 
   return (
-     <Router>
+    <Router>
      <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">Inicio</Navbar.Brand>
@@ -43,17 +43,17 @@ const App = () => {
           
         </Navbar.Collapse>
       </Container>
-    </Navbar>
-     <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/crear-nota" element={<CrearNota />} />
-       <Route path="/mostrar-notas" element={<MostrarNotas />} />
-       <Route path="/about-me" element={<AboutMe />} />
-       <Route path="/registro" element={<Registro />} />
-       <Route path="/login" element={<Login />} />
-       <Route path="/not-found" element={<NotFound />} />
-     </Routes>
-   </Router>
+     </Navbar>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/crear-nota" element={<CrearNota />} />
+      <Route path="/mostrar-notas" element={<MostrarNotas />} />
+      <Route path="/about-me" element={<AboutMe />} />
+      <Route path="/registro" element={<Registro />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/not-found" element={<NotFound />} />
+    </Routes>
+  </Router>
   );
 };
 
